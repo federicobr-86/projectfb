@@ -25,22 +25,17 @@ const getLocation = () => {
 }
 
 return (
-  <div className='center'>
-    <Container className='locationstyle'>
-    <h1>Geolocation App</h1>  
-    <br></br>
-        <div >
-         <Button
-            onClick={getLocation}
-          >
-          Show my Coordinates!  
-          </Button>
-          <p>{status}</p>
-          {lat && <p>Latitude: {lat}</p>}
-          {lng && <p>Longitude: {lng}</p>}
-        </div>
-  </Container>
-  </div>
+  
+      <Container className='locationstyle'>
+        <div className='center'>
+      <h1>Geolocation App</h1>  
+      <br></br>
+          <Button onClick={getLocation}>Show my Coordinates!</Button>
+            <p>{status}</p>
+            {lat && <p>Latitude: {lat}</p>}
+            {lng && <p>Longitude: {lng}</p>}
+      </div>
+      </Container>
 );
 }
 
