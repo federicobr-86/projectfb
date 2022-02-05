@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 
 // Top Navigation bar with links
 const NavigationBar = () => { 
+const navigate = useNavigate();
 return(
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
@@ -11,9 +13,9 @@ return(
         <Nav className="me-auto">
           <Nav.Link href='/'></Nav.Link>
           <NavDropdown title="My React Examples" id="basic-nav-dropdown">
-            <NavDropdown.Item href='/search'>Search</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => navigate('search')}>Search</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/location'>Geolocation</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => navigate('location')}>Geolocation</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

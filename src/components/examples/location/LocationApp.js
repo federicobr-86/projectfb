@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button} from 'react-bootstrap';
+import {Col, Container, Button} from 'react-bootstrap';
 import '../../../styles/style.css';
 
 // Detects coordinates and handles edge cases such as geolocation not supported
@@ -26,7 +26,8 @@ const getLocation = () => {
 
 // Renders the location
 return (
-<div>
+<Container>
+ <Col className="container-fluid mt-2">
   <h1 class="titulo">Geolocation App</h1> 
   <div className="locationbox">
     <div className='center'>
@@ -36,7 +37,8 @@ return (
         {lng && <p>Longitude: {lng}</p>}
       </div>
   </div>
-</div>
+  </Col>
+</Container>
 );
 }
 
