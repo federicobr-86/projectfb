@@ -26,7 +26,6 @@ const getLocation = () => {
 }
 
 // Renders the location
-
 return (
 <div>
   <h1 className='locationCenter'>Geolocation App</h1> 
