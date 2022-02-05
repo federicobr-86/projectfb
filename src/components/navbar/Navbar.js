@@ -7,7 +7,7 @@ return(
     <Container>
       <Navbar.Brand href='/'>Home</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" expand="sm">
         <Nav className="me-auto">
           <Nav.Link href='/'></Nav.Link>
           <NavDropdown title="My React Examples" id="basic-nav-dropdown">
