@@ -16,14 +16,18 @@ return (
     <div className='center'>
         <CardGroup className="cardsgroup">   
            <Card className="text-center" border="dark" >
-               <Card.Header border="dark">Geolocation App</Card.Header>
+               <Card.Header border="dark">
+                   <strong>Geolocation App</strong>
+                   </Card.Header>
                 <Card.Img variant="top" border="dark" className='imagen' src={LocationImage}/>
                  <Card.Body>
                     <Button variant="primary" onClick={() => navigate('location')}>Visit!</Button>
                 </Card.Body>
                 </Card>
             <Card className="text-center" border="dark" >
-                <Card.Header border="dark">WikiSearch App</Card.Header>
+                <Card.Header border="dark">
+                <strong>Geolocation App</strong>
+                </Card.Header>
                   <Card.Img variant="top" border="dark" className='imagen' src={WikiImage}  />
                      <Card.Body>
                        <Button variant="primary" onClick={() => navigate('search')}>Visit!</Button>

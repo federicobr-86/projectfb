@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Col, Container, Button} from 'react-bootstrap';
+import {Container, Col, Button} from 'react-bootstrap';
 import '../../../styles/style.css';
 
 // Detects coordinates and handles edge cases such as geolocation not supported
@@ -24,21 +24,19 @@ const getLocation = () => {
   }
 }
 
-// Renders the location
+// Renders the location (you can override the dev console sensor and choose other location)
 return (
-<Container>
- <Col className="container-fluid mt-2">
-  <h1 class="titulo">Geolocation App</h1> 
-  <div className="locationbox">
-    <div className='center'>
-      <Button onClick={getLocation}>Show my Coordinates!</Button>
-        <p>{status}</p>
-        {lat && <p>Latitude: {lat}</p>}
-        {lng && <p>Longitude: {lng}</p>}
-      </div>
+  <Container>
+  <div className='center'>
+  <h1>Geolocation App</h1>
+  <Col className="container-fluid mt-4">
+        <Button onClick={getLocation}>Show my Coordinates!</Button>
+          <p>{status}</p>
+          {lat && <p>Latitude: {lat}</p>}
+          {lng && <p>Longitude: {lng}</p>}
+    </Col>
   </div>
-  </Col>
-</Container>
+  </Container>
 );
 }
 

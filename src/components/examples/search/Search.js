@@ -30,12 +30,13 @@ useEffect(() => {
 const renderedResults = results.map((result) => {
   return (
       <div key={result.pageid}>
-          <a href={`https://en.wikipedia.org?curid=${result.pageid}`}> </a>
         <ListGroup as="ol">
           <ListGroup.Item as="li">
+          <a href={`https://en.wikipedia.org?curid=${result.pageid}`}>
             <div className="fw-bold">{result.title}</div>
+            </a>
             <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
-          </ ListGroup.Item>
+            </ ListGroup.Item>
       </ListGroup>
       </div>
     );
@@ -51,7 +52,7 @@ const renderedResults = results.map((result) => {
             <input value={term} onChange={(e) => setTerm(e.target.value)} className="input"/>
           </Form.Group>
       </Form>
-      <ListGroup>{renderedResults}</ListGroup>
+      <ListGroup >{renderedResults}</ListGroup>
     </Container>
   );
 };
