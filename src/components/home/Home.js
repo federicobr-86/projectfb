@@ -12,8 +12,7 @@ export default function Home(){
 const navigate = useNavigate();
 return (
  <Container>
- <Col className="container-fluid mt-2">
-    <div className='center'>
+ <Col className="container-fluid mt-4">
         <CardGroup className="cardsgroup">   
            <Card className="text-center" border="dark" >
                <Card.Header border="dark">
@@ -34,7 +33,6 @@ return (
                       </Card.Body>
             </Card>
         </CardGroup>   
-    </div>
  </Col>
  </Container>
 );
