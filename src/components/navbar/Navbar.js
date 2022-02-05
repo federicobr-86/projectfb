@@ -1,6 +1,6 @@
-// Import React Bootstrap components
 import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 
+// Top Navigation bar with links
 const NavigationBar = () => { 
 return(
     <Navbar bg="dark" variant="dark" expand="lg">
