@@ -25,7 +25,7 @@ return (
                 </Card>
             <Card className="text-center" border="dark" >
                 <Card.Header border="dark">
-                <strong>Geolocation App</strong>
+                <strong>Wikipedia Search</strong>
                 </Card.Header>
                   <Card.Img variant="top" border="dark" className='imagen' src={WikiImage}  />
                      <Card.Body>

@@ -5,17 +5,17 @@ import { Navbar, Container, Nav, NavDropdown  } from 'react-bootstrap';
 const NavigationBar = () => { 
 const navigate = useNavigate();
 return(
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
     <Container>
       <Navbar.Brand href='/'>Home</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" expand="sm">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href='/'></Nav.Link>
-          <NavDropdown title="My React Examples" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={() => navigate('search')}>Search</NavDropdown.Item>
+          <NavDropdown title="Menu" id="collasible-nav-dropdown">
+            <NavDropdown.Item onClick={() => navigate('search')}>Search App</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item onClick={() => navigate('location')}>Geolocation</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => navigate('location')}>Geolocation App</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

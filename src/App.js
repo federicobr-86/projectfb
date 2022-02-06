@@ -9,6 +9,7 @@ import {
   Routes,
 } from "react-router-dom";
 
+// The main App, which renders the navigaton bar configs the routes.
 function App() {
   return (
     <div>

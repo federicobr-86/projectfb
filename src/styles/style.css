@@ -1,7 +1,4 @@
-.d-flex {
-  display: flex!important;
-  height: auto;
-}
+/* Add styling using CSS */
 
 .center {
   position: absolute;
@@ -30,24 +27,11 @@
   border-radius: 5px;
 }
 
-
 .titulo{
 
   width:500px;
   margin: 0 auto;
   text-align: center;
-
-}
-
-.locationbox{
-
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  border: 1px blue;
-  padding: 10px;
-  justify-content: center;
 
 }
 

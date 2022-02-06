@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Container, Col, Button} from 'react-bootstrap';
 import '../../../styles/style.css';
 
-// Detects coordinates and handles edge cases such as geolocation not supported
+// Detects coordinates, updates state and handles edge cases such as geolocation not being supported.
 
 const LocationApp = () => {
 const [lat, setLat] = useState(null);
